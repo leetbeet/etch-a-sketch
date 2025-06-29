@@ -1,0 +1,29 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    height: 42%;
+    margin-bottom: 20%;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.box {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black
+}
+
