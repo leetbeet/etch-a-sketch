@@ -27,3 +27,6 @@ html, body {
     border: 1px solid black
 }
 
+.highlighted {
+    background-color: red;
+}
