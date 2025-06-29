@@ -17,12 +17,15 @@ function createGrid(size) {
 
 function applyBoxListeners() {
     const boxes = document.querySelectorAll(".box");
+    let opacity = 0;
     boxes.forEach(box => {
         box.addEventListener("mouseover", () => {
             const red = Math.floor(Math.random() * 256);
             const green = Math.floor(Math.random() * 256);
             const blue = Math.floor(Math.random() * 256);
             box.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            opacity += 0.1;
+            box.style.opacity = `${opacity}`;
         });
     });
 }
